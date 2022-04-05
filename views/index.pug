@@ -1,0 +1,28 @@
+extends layout.pug 
+
+block content 
+
+    p.info-block Please choose the category, desribe your issues and create requests below
+   
+    p.info-block.with-bottom-margin You can check the response 
+        a.link(href="/check") HERE 
+        |  by entering generated code
+
+    if received == 'yes'
+        p.info-block.msg.ok Message received
+        p.info-block.msg.ticket Here is your code: 
+            span.code #{ ticket }
+    
+    else if received == 'no' 
+        p.info-block.msg.err Message not received
+
+    form(action="/" method='POST')
+        select.input(name="category") 
+            each cat in categories 
+                option(value= cat.id)= cat.title
+
+        textarea.input(name="issue" cols="30" rows="10" class= received == 'no' ? 'input-err' : '') 
+        div.btn-block 
+            button.input.btn Create
+            if received == 'no'
+                p.input-err-msg Please fill all the required fields  

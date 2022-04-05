@@ -1,0 +1,12 @@
+extends layout.pug 
+
+block content 
+
+    p.info-block Enter the code to check the response
+
+    form(action="/check" method='POST')
+        input.input(name="code" placeholder="For example: 2eabngwfc") 
+        button.input.btn Check
+    
+    if response 
+        p.check-msg= response
