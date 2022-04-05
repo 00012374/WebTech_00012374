@@ -10,3 +10,5 @@ How to run the application?
 3. And then open the file named 00012374 via VS code app. 
 4. Open new Terminal and type "node app".
 5. Booom, great so far. Now you can open the application via any browser, just search for localhost:3000.
+
+I have deployed my application to the glitch. Link for the hosted app : https://jet-delightful-spoonbill.glitch.me/
