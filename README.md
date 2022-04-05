@@ -11,4 +11,6 @@ How to run the application?
 4. Open new Terminal and type "node app".
 5. Booom, great so far. Now you can open the application via any browser, just search for localhost:3000.
 
+Link for the GitHub repository: https://github.com/00012374/WebTech_00012374.git
+
 I have deployed my application to the glitch. Link for the hosted app : https://jet-delightful-spoonbill.glitch.me/
